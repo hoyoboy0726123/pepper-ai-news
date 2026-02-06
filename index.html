@@ -9,7 +9,7 @@
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; }
         .fb-post-content {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
             border-left: 4px solid #1877f2;
         }
         .copy-btn {
@@ -34,13 +34,17 @@
         .arrow {
             transition: transform 0.2s ease;
         }
+        .full-article {
+            border-left: 3px solid #e5e7eb;
+            padding-left: 1rem;
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen py-10">
     <div class="max-w-3xl mx-auto px-4">
         <header class="text-center mb-12">
             <h1 class="text-4xl font-bold text-indigo-600 mb-2">🌶️ Pepper AI News</h1>
-            <p class="text-gray-600">每日 AI 重點新聞速遞</p>
+            <p class="text-gray-600">每日 AI 重點新聞速遞｜完整翻譯 + FB 貼文</p>
             <p class="text-sm text-gray-400 mt-2">更新日期：2026-02-06</p>
         </header>
 
@@ -49,38 +53,38 @@
             <!-- News Item 1 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-purple-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🚀 Anthropic 發布 Claude Opus 4.6：更強大的金融研究與程式碼能力</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🚀 Anthropic 發布擅長金融研究的新模型</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
                         <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded mr-2">Anthropic</span>
                         <span>Source: <a href="https://www.bloomberg.com/news/articles/2026-02-05/anthropic-updates-ai-model-to-field-more-complex-financial-research" class="text-blue-500 hover:underline" target="_blank">Bloomberg</a></span>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        Anthropic 於 2026 年 2 月 5 日正式發布其最新旗艦模型 <strong>Claude Opus 4.6</strong>，這是繼去年 11 月 Opus 4.5 之後的重大升級。新模型專為處理複雜的金融研究任務而設計，能夠深入分析公司數據、監管文件與市場資訊，產出原本需要人類花費數天才能完成的詳細財務分析報告。
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        除了金融領域，Opus 4.6 在多項工作相關功能上也有顯著提升，包括製作試算表與簡報、以及軟體開發能力。Anthropic 表示，新模型能「更謹慎地規劃、更持久地執行代理任務、在大型程式碼庫中可靠運作，並能自行發現錯誤」。
-                    </p>
+                    
+                    <!-- 完整翻譯 -->
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4">
+                        <p><strong>2026 年 2 月 5 日 下午 5:45 UTC｜更新於下午 6:14 UTC</strong></p>
+                        <p>Anthropic 正在發布其最強大 AI 模型的新版本，該版本專為執行金融研究而設計。此舉距離該公司進軍法律服務領域、衝擊傳統軟體製造商股價，僅過了數天。</p>
+                        <p>該公司於週四發布了 <strong>Claude Opus 4.6</strong>，聲稱該模型能夠深入分析公司數據、監管文件和市場資訊，產出通常需要人類花費數天才能完成的詳細財務分析報告。Opus 4.6 同時也被設計成在其他工作相關功能上表現更佳，包括製作試算表、簡報，以及軟體開發。</p>
+                    </div>
                     
                     <!-- FB Post Section -->
-                    <details class="mt-4">
-                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <details class="mt-6">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium py-2 px-3 bg-blue-50 rounded-lg">
                             <span class="arrow mr-2">▶</span>
-                            <span>📱 查看 Facebook 貼文</span>
+                            <span>📱 展開 Facebook 貼文（一鍵複製）</span>
                         </summary>
                         <div class="fb-post-content mt-3 p-4 rounded-lg">
-                            <pre id="fb-post-1" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">🚀 【重磅】Anthropic 發布 Claude Opus 4.6！
+                            <pre id="fb-post-1" class="whitespace-pre-wrap text-sm text-gray-700 mb-3 font-sans">🚀 【重磅】Anthropic 發布 Claude Opus 4.6！
 
-這次升級超有感！新模型專為「金融研究」打造，能分析公司財報、監管文件、市場數據，產出人類需要好幾天才能完成的分析報告 📊
+專為金融研究打造的新旗艦模型來了！能分析公司財報、監管文件、市場數據，產出人類需好幾天才能完成的詳細分析報告 📊
 
-更厲害的是：
-✅ 更強的規劃能力
-✅ 更持久的代理任務執行
-✅ 自動發現並修正錯誤
+更強大的地方：
+✅ 試算表與簡報製作
+✅ 軟體開發能力升級
+✅ 專攻複雜金融分析
 
 AI 正在改變金融業的遊戲規則！
 
-🔗 https://www.bloomberg.com/news/articles/2026-02-05/anthropic-updates-ai-model-to-field-more-complex-financial-research
-
+🔗 原文：Bloomberg
 #AI #Claude #Anthropic #金融科技 #人工智慧</pre>
                             <button onclick="copyToClipboard('fb-post-1', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
                                 📋 一鍵複製
@@ -93,31 +97,48 @@ AI 正在改變金融業的遊戲規則！
             <!-- News Item 2 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-green-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💻 GitHub Copilot 正式支援 Claude Opus 4.6</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💻 Claude Opus 4.6 正式在 GitHub Copilot 上線</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
                         <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-2">GitHub</span>
                         <span>Source: <a href="https://github.blog/changelog/2026-02-05-claude-opus-4-6-is-now-generally-available-for-github-copilot/" class="text-blue-500 hover:underline" target="_blank">GitHub Changelog</a></span>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        GitHub 官方宣布，Anthropic 最新發布的 <strong>Claude Opus 4.6</strong> 模型現已在 GitHub Copilot 中正式上線。根據早期測試，Claude Opus 4.6 在代理式程式開發（agentic coding）方面表現出色，特別擅長處理需要規劃與工具調用的高難度任務。
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        支援範圍：Copilot Pro、Pro+、Business 與 Enterprise 用戶皆可使用。開發者可在 VS Code、Visual Studio、github.com、GitHub Mobile、GitHub CLI 中使用。
-                    </p>
+                    
+                    <!-- 完整翻譯 -->
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4">
+                        <p>Anthropic 最新發布的模型 <strong>Claude Opus 4.6</strong> 現已在 GitHub Copilot 中逐步推出。根據早期測試，Claude Opus 4.6 在<strong>代理式程式開發（agentic coding）</strong>方面表現出色，尤其擅長處理需要規劃和工具調用的高難度任務。</p>
+                        
+                        <p><strong>在 GitHub Copilot 中的可用性：</strong></p>
+                        <p>Claude Opus 4.6 將提供給 Copilot Pro、Pro+、Business 和 Enterprise 用戶使用。</p>
+                        
+                        <p>您可以在以下環境的模型選擇器中選取該模型：</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Visual Studio Code 的所有模式：chat、ask、edit、agent</li>
+                            <li>Visual Studio 的所有模式：agent、ask</li>
+                            <li>github.com</li>
+                            <li>GitHub Mobile iOS 和 Android</li>
+                            <li>GitHub CLI</li>
+                            <li>GitHub Copilot coding agent（僅限 Pro 和 Pro+ 帳戶）</li>
+                        </ul>
+                        
+                        <p>推出將會逐步進行。如果您還沒看到，請稍後再查看。</p>
+                        
+                        <p><strong>啟用存取權限：</strong></p>
+                        <p>Copilot Enterprise 和 Copilot Business 方案的管理員必須在 Copilot 設定中啟用 Claude Opus 4.6 政策。</p>
+                        
+                        <p><strong>了解更多：</strong></p>
+                        <p>若要探索 GitHub Copilot 中所有可用的模型，請參閱官方模型文件並開始使用 Copilot。歡迎加入 GitHub Community 分享您的回饋意見。</p>
+                    </div>
                     
                     <!-- FB Post Section -->
-                    <details class="mt-4">
-                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <details class="mt-6">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium py-2 px-3 bg-blue-50 rounded-lg">
                             <span class="arrow mr-2">▶</span>
-                            <span>📱 查看 Facebook 貼文</span>
+                            <span>📱 展開 Facebook 貼文（一鍵複製）</span>
                         </summary>
                         <div class="fb-post-content mt-3 p-4 rounded-lg">
-                            <pre id="fb-post-2" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">💻 開發者福音！GitHub Copilot 現在支援 Claude Opus 4.6 了！
+                            <pre id="fb-post-2" class="whitespace-pre-wrap text-sm text-gray-700 mb-3 font-sans">💻 開發者福音！GitHub Copilot 現在支援 Claude Opus 4.6！
 
-這個組合有多強？
-🔥 專攻「代理式程式開發」
-🔥 擅長需要規劃的複雜任務
-🔥 自動工具調用超順手
+專攻「代理式程式開發」，擅長需要規劃的複雜任務 🔥
 
 支援環境：
 • VS Code（全模式）
@@ -126,10 +147,9 @@ AI 正在改變金融業的遊戲規則！
 • GitHub Mobile
 • GitHub CLI
 
-Pro/Pro+/Business/Enterprise 用戶現在就能用！
+Pro / Pro+ / Business / Enterprise 用戶現在就能用！
 
-🔗 https://github.blog/changelog/2026-02-05-claude-opus-4-6-is-now-generally-available-for-github-copilot/
-
+🔗 原文：GitHub Changelog
 #GitHub #Copilot #Claude #開發者 #程式設計</pre>
                             <button onclick="copyToClipboard('fb-post-2', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
                                 📋 一鍵複製
@@ -142,37 +162,65 @@ Pro/Pro+/Business/Enterprise 用戶現在就能用！
             <!-- News Item 3 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-red-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🔥 超級盃廣告大戰！Anthropic 與 OpenAI 正面交鋒</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🔥 Anthropic 與 OpenAI 的競爭延燒至超級盃廣告</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
                         <span class="bg-red-100 text-red-800 px-2 py-1 rounded mr-2">AI Drama</span>
                         <span>Source: <a href="https://www.mercurynews.com/2026/02/05/openai-anthropic-rivalry/" class="text-blue-500 hover:underline" target="_blank">Mercury News / AP</a></span>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        ChatGPT 與 Claude 兩大 AI 聊天機器人背後的公司——OpenAI 與 Anthropic——今年將迎來「生死對決」，雙方都需要證明自己的商業模式能夠實現盈利。這場激烈競爭現已延燒至<strong>超級盃廣告</strong>戰場。
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Anthropic 將在本週日的超級盃期間播出兩支電視廣告，幽默諷刺 OpenAI 開始在免費版 ChatGPT 中投放廣告的做法。廣告結尾打出標語：<strong>「廣告即將進入 AI，但不會進入 Claude。」</strong> Sam Altman 在社群媒體上回擊，稱這些廣告「有趣但不誠實」。
-                    </p>
+                    
+                    <!-- 完整翻譯 -->
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4">
+                        <p><em>作者：MATT O'BRIEN，AP 科技記者</em></p>
+                        
+                        <p>ChatGPT 和 Claude 這兩個競爭對手聊天機器人背後的人工智慧新創公司，今年正準備迎接一場生死對決，因為雙方都需要證明自己能夠發展出一個賺錢比虧錢多的業務。</p>
+                        
+                        <p>這兩家 AI 開發商之間最激烈的競爭——以及與 Google 等大公司的競爭——是一場爭取企業領導者的競賽，這些領導者正在尋求採用 AI 工具來提高職場生產力。這場競爭也蔓延到其他領域，包括超級盃。</p>
+                        
+                        <p>Anthropic 將在週日的比賽期間播出兩支電視廣告，嘲諷 OpenAI 開始在免費版和較便宜版本的 ChatGPT 中投放數位廣告的做法。雖然 Anthropic 的營收模式著重於向其他企業銷售 Claude，但 OpenAI 已經開始透過廣告來從數億免費使用 ChatGPT 的消費者身上賺錢。</p>
+                        
+                        <p>Anthropic 的廣告以幽默的方式嘲諷操控性聊天機器人的危險——這些機器人被呈現為說話生硬且不自然地熱情的真人——先與用戶建立關係，然後才試圖推銷產品。廣告以書面訊息結尾——「廣告即將進入 AI，但不會進入 Claude。」</p>
+                        
+                        <p>這似乎觸動了敏感神經。OpenAI 執行長 Sam Altman 在社群媒體上發文說，他對這些「有趣」的廣告笑了，但抨擊它們不誠實，並諷刺競爭對手較小的客戶群。</p>
+                        
+                        <p>「Anthropic 向有錢人賣昂貴的產品，」Altman 在 X 上寫道。他還吹噓說，「免費使用 ChatGPT 的德州人」比全美國使用 Claude 的人還多。</p>
+                        
+                        <p>OpenAI 總裁兼共同創辦人 Greg Brockman 也加入直接挑戰 Anthropic 執行長 Dario Amodei，質疑 Anthropic 是否真的承諾永遠不會將 Claude「用戶的注意力或數據」賣給廣告商。很少在 X 上發文的 Amodei 沒有回應。</p>
+                        
+                        <p>這場競爭自 Amodei 和其他 OpenAI 領導人離開該 AI 研究實驗室並於 2021 年成立 Anthropic 以來就一直存在，當時他們承諾更明確地關注稱為人工通用智慧（AGI）的超人類技術的安全性——這是兩家舊金山公司都想建造的技術。那是在 OpenAI 於 2022 年底首次發布 ChatGPT 之前，ChatGPT 揭示了能幫助撰寫電子郵件、作業或電腦程式碼的大型語言模型的巨大商業潛力。</p>
+                        
+                        <p>本週兩家公司都推出產品更新，競爭加劇。OpenAI 於週四推出了名為 Frontier 的新平台，旨在成為企業採用各種 AI 工具（包括非 OpenAI 製造的工具）的一站式服務，這些工具可以協同工作。這是推動 AI 代理人作為「AI 同事」自主工作的一部分。</p>
+                        
+                        <p>「我們可以成為企業 AI 轉型的首選合作夥伴。像這樣的平台，我們能產生的營收沒有上限。」OpenAI 應用程式執行長 Fidji Simo 本週告訴記者。</p>
+                        
+                        <p>Anthropic 則於週四宣布升級其「最聰明的模型」，聲稱新的 Claude Opus 4.6「計劃更謹慎、更持久地維持代理任務、在大型程式碼庫中可靠運作，並能發現自己的錯誤。」OpenAI 隨後很快又推出了另一個更新——其 Codex 程式設計工具的新版本，據稱可以「做幾乎任何」專業人士在電腦上做的事情。</p>
+                        
+                        <p>「OpenAI 和 Anthropic 都真的在試圖將自己定位為平台公司，」Gartner 分析師 Arun Chandrasekaran 說。「模型很重要，但模型不是目的本身。」</p>
+                        
+                        <p>這兩家新創公司不只是在彼此競爭。他們還面臨來自 Google 的競爭，Google 既是強大 AI 模型 Gemini 的領先開發商，也擁有由其傳統數位廣告業務營收支持的雲端運算基礎設施。他們與 Amazon（Anthropic 的主要雲端供應商）和 Microsoft（持有 OpenAI 27% 股權）的關係也很複雜。</p>
+                    </div>
                     
                     <!-- FB Post Section -->
-                    <details class="mt-4">
-                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <details class="mt-6">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium py-2 px-3 bg-blue-50 rounded-lg">
                             <span class="arrow mr-2">▶</span>
-                            <span>📱 查看 Facebook 貼文</span>
+                            <span>📱 展開 Facebook 貼文（一鍵複製）</span>
                         </summary>
                         <div class="fb-post-content mt-3 p-4 rounded-lg">
-                            <pre id="fb-post-3" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">🔥 AI 界的超級盃大戰開打！
+                            <pre id="fb-post-3" class="whitespace-pre-wrap text-sm text-gray-700 mb-3 font-sans">🔥 AI 界的超級盃大戰開打！
 
 Anthropic 在超級盃打廣告諷刺 OpenAI：
 「廣告即將進入 AI，但不會進入 Claude。」
 
 Sam Altman 馬上回嗆：「有趣，但不誠實！」
-還補刀：「用免費 ChatGPT 的德州人，比全美用 Claude 的人還多。」
+還補刀：「免費用 ChatGPT 的德州人，比全美用 Claude 的人還多。」
+
+兩家公司本週都推出重磅更新：
+• OpenAI 推出 Frontier 企業平台
+• Anthropic 發布 Claude Opus 4.6
 
 這場 AI 口水戰誰勝誰負？🍿
 
-🔗 https://www.mercurynews.com/2026/02/05/openai-anthropic-rivalry/
-
+🔗 原文：Mercury News / AP
 #AI #OpenAI #Anthropic #ChatGPT #Claude #SuperBowl</pre>
                             <button onclick="copyToClipboard('fb-post-3', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
                                 📋 一鍵複製
@@ -184,41 +232,71 @@ Sam Altman 馬上回嗆：「有趣，但不誠實！」
 
             <!-- News Item 4 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6 border-l-4 border-blue-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">📈 AI 三巨頭 IPO 倒數！OpenAI、Anthropic、xAI 估值飆升</h2>
+                <div class="p-6 border-l-4 border-yellow-500">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💸 Alphabet 重新設定 AI 基礎設施支出標準</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2">IPO</span>
-                        <span>Source: <a href="https://www.cnbc.com/2026/02/04/software-experiencing-most-exciting-moment-as-ai-fears-hammer-stocks.html" class="text-blue-500 hover:underline" target="_blank">CNBC</a></span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded mr-2">Google</span>
+                        <span>Source: <a href="https://www.cnbc.com/2026/02/04/alphabet-resets-the-bar-for-ai-infrastructure-spending.html" class="text-blue-500 hover:underline" target="_blank">CNBC</a></span>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        AI 領域的三大獨角獸正面臨 IPO 的關鍵時刻。根據最新報導，<strong>Anthropic 本月稍早簽署了一份 100 億美元融資協議，估值達 3500 億美元</strong>；而 <strong>OpenAI 據報正瞄準超過 8000 億美元的估值</strong>。與此同時，Google 母公司 Alphabet 的股價在過去一年飆漲超過 60%。
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Anthropic 的 Claude Code 已成為爆款產品，重創傳統軟體股並迫使 OpenAI 緊急回應——後者隨即推出了 Codex 代理人的更新版本。
-                    </p>
+                    
+                    <!-- 完整翻譯 -->
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4">
+                        <p>Google 母公司 Alphabet 的第四季業績超過華爾街預期，但對人工智慧基礎設施預期支出設定的新高標準，抑制了市場熱情。</p>
+                        
+                        <p>儘管在營收、每股盈餘和雲端業務方面都超出預期，Google 母公司的股價在週三盤後交易中持續下跌，顯示華爾街對 AI 支出仍然非常敏感。</p>
+                        
+                        <p>Alphabet 表示，預計 2026 年資本支出將在 <strong>1,750 億至 1,850 億美元</strong>之間。該預測的高端將是其 2025 年資本支出的兩倍多。</p>
+                        
+                        <p>透過這項預測，Alphabet 正在重新設定今年的支出預期，並考驗其在華爾街的受歡迎程度。該公司在 10 月曾表示，預計 2026 年資本支出將「大幅增加」，但週三分享的預測超過了其超大規模同業。</p>
+                        
+                        <p>在上週的季度報告中，Microsoft 沒有提供今年的具體預測，但表示本季度資本支出將「環比下降」，此前該公司報告最近一個季度的支出為 375 億美元。Meta 表示，預計 2026 年支出在 1,150 億至 1,350 億美元之間，高端幾乎是去年 722 億美元數字的兩倍。</p>
+                        
+                        <p>Amazon 將於週四公布業績。根據 FactSet，分析師預計該公司 2025 年資本支出將在約 1,245 億美元結束，並預計今年將增長 18% 至 1,466 億美元。</p>
+                        
+                        <p>Alphabet 的支出增加正值華爾街對額外 AI 支出特別敏感之際。</p>
+                        
+                        <p>儘管科技公司財報表現積極，但整個軟體產業在過去三個月已損失了 30% 的市值。這是由於擔心 AI 工具將顛覆現有軟體工具，使更高的支出風險更大。到目前為止，Alphabet 基本上沒有受到任何重大股價波動的影響，特別是在它成為 2025 年表現最佳的股票之一之後。</p>
+                        
+                        <p>但當華爾街對大量支出感到猶豫時，科技公司正在競相建設更多基礎設施，以跟上客戶對 AI 服務的需求。</p>
+                        
+                        <p>Google 的雲端部門（包含其大部分 AI 產品和服務）的積壓訂單環比激增 55%，同比增長超過一倍，在第四季末達到 <strong>2,400 億美元</strong>，Alphabet 財務長 Anat Ashkenazi 週三在電話會議上告訴分析師。Google 的雲端營收與去年同期相比增長了近 48%。</p>
+                        
+                        <p>計劃的 2026 年資本支出將用於投資 Google DeepMind 的 AI 運算能力，並滿足「龐大的雲端客戶需求以及其他投資項目的戰略投資」，Ashkenazi 說。</p>
+                        
+                        <p>她補充說，這也將用於「改善用戶體驗並提高 Google 服務中廣告商的投資報酬率。」</p>
+                        
+                        <p>當被問到什麼讓高管們夜不能寐時，Pichai 回答說「運算能力。」</p>
+                        
+                        <p>「無論是電力、土地、供應鏈限制，如何擴展以滿足這個非凡時刻的非凡需求？」他說。</p>
+                    </div>
                     
                     <!-- FB Post Section -->
-                    <details class="mt-4">
-                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <details class="mt-6">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium py-2 px-3 bg-blue-50 rounded-lg">
                             <span class="arrow mr-2">▶</span>
-                            <span>📱 查看 Facebook 貼文</span>
+                            <span>📱 展開 Facebook 貼文（一鍵複製）</span>
                         </summary>
                         <div class="fb-post-content mt-3 p-4 rounded-lg">
-                            <pre id="fb-post-4" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">📈 AI 三巨頭 IPO 倒數計時！
+                            <pre id="fb-post-4" class="whitespace-pre-wrap text-sm text-gray-700 mb-3 font-sans">💸 Google 丟出震撼彈！
 
-最新估值出爐：
-💰 Anthropic：$3500 億美元（剛融資 $100 億）
-💰 OpenAI：瞄準 $8000 億美元+
-💰 Google 母公司 Alphabet：過去一年股價飆漲 60%+
+2026 年 AI 基礎建設預算：
+🔥 $1,750-1,850 億美元
+🔥 是 2025 年的 2 倍以上！
 
-Claude Code 爆紅到什麼程度？
-直接衝擊傳統軟體股，逼得 OpenAI 緊急推出 Codex 更新來應戰！
+各家科技巨頭 2026 年燒錢比一比：
+📊 Google：$1,850 億
+📊 Amazon：$1,466 億
+📊 Meta：$1,150-1,350 億
 
-AI 獨角獸們準備上市了，你準備好了嗎？
+Google Cloud 積壓訂單已達 $2,400 億，年增超過 100%！
 
-🔗 https://www.cnbc.com/2026/02/04/software-experiencing-most-exciting-moment-as-ai-fears-hammer-stocks.html
+CEO Sundar Pichai 被問「什麼讓你夜不能寐？」
+答：「運算能力。」
 
-#AI #IPO #Anthropic #OpenAI #投資 #科技股</pre>
+AI 軍備競賽，誰也不想落後 🚀
+
+🔗 原文：CNBC
+#Google #AI #雲端 #DeepMind #科技投資</pre>
                             <button onclick="copyToClipboard('fb-post-4', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
                                 📋 一鍵複製
                             </button>
@@ -229,48 +307,65 @@ AI 獨角獸們準備上市了，你準備好了嗎？
 
             <!-- News Item 5 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6 border-l-4 border-yellow-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💸 Google 震撼華爾街：2026 年 AI 基建投資上看 1850 億美元</h2>
+                <div class="p-6 border-l-4 border-blue-500">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">📉 軟體業正經歷「最令人興奮的時刻」，AI 恐慌卻重擊股價</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded mr-2">Google</span>
-                        <span>Source: <a href="https://www.cnbc.com/2026/02/04/alphabet-resets-the-bar-for-ai-infrastructure-spending.html" class="text-blue-500 hover:underline" target="_blank">CNBC</a></span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2">Market</span>
+                        <span>Source: <a href="https://www.cnbc.com/2026/02/04/software-experiencing-most-exciting-moment-as-ai-fears-hammer-stocks.html" class="text-blue-500 hover:underline" target="_blank">CNBC</a></span>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        Google 母公司 Alphabet 公布 2026 年資本支出預算，預計將達到 <strong>1750 億至 1850 億美元</strong>，這個數字幾乎是 2025 年支出的兩倍以上，遠超華爾街預期。這筆龐大的支出將主要用於投資 Google DeepMind 的 AI 運算能力，以及滿足「龐大的雲端客戶需求」。
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        相較之下，Meta 預計 2026 年支出 1150-1350 億美元，Amazon 預估 1466 億美元。Google Cloud 的積壓訂單已飆升至 2400 億美元，年增超過一倍，顯示企業對 AI 服務的需求持續強勁。儘管華爾街對高額 AI 支出感到緊張，科技巨頭們仍在全速擴建基礎設施。
-                    </p>
+                    
+                    <!-- 完整翻譯 -->
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4">
+                        <p>Box 執行長 Aaron Levie 說，在他的雲端軟體公司 20 年歷史中，「這是我們經歷過最令人興奮的時刻。」但華爾街不這麼認為。</p>
+                        
+                        <p>Box 股價在 2026 年已下跌 17%，在經歷自 2023 年以來最陡峭的月度跌幅後開始今年。它被捲入了軟體股的暴跌中，因為投資者拋售他們擔心會被人工智慧代理人崛起所取代的公司股票。</p>
+                        
+                        <p>WisdomTree 雲端運算基金在 2026 年迄今已暴跌約 20%，包括本週 6.5% 的跌幅。許多公司的表現比 Box 更糟。HubSpot 今年已下跌 39%，緊隨 2025 年 42% 的暴跌。Figma 今年已暴跌 40%，Atlassian 下跌 35%，Shopify 下跌 29%。</p>
+                        
+                        <p>由 OpenAI 的 ChatGPT 在三年多前啟動的生成式 AI 熱潮，已迅速推進到商業領域，新工具可以在幾秒或幾分鐘內用幾個文字提示創建應用程式、網站和其他數位產品。Levie 描述了產業內部發生的「認知失調」，因為公司看到新技術增強其產品的力量，同時也在應對外界更廣泛的恐懼——AI 會摧毀他們。</p>
+                        
+                        <p>「這在某種程度上誤解了公司傾向於在哪裡花費資源、時間和精力的概念，」Levie 週三告訴 CNBC。</p>
+                        
+                        <p>他主張，企業寧願付費購買專門從事後台軟體或客戶關係管理系統的供應商的產品和服務，而不是自己做並承擔隨之而來的所有責任。</p>
+                        
+                        <p>Salesforce 執行長 Marc Benioff 也提出了類似的論點，12 月告訴 CNBC 的 Jim Cramer，「我們擁有所有客戶的數據」，而自動化銷售和客戶服務工作流程的 Agentforce「是我在 Salesforce 歷史上見過成長最快的產品。」</p>
+                        
+                        <p>ServiceNow 執行長 Bill McDermott 上週在該公司報告健康的季度業績和指引後表示，市場的擔憂是錯誤的，他的產品「作為語義層，使 AI 在企業中無處不在。」</p>
+                        
+                        <p>加速拋售的一個重要催化劑是 Claude AI 模型創造者 Anthropic 的進步。週五，Anthropic 為其 Claude Cowork 生產力工具宣布了新的法律、財務和產品行銷功能，並在開源許可證下發布了外掛程式，實現客製化。</p>
+                        
+                        <p>本月稍早，Anthropic 簽署了一份 100 億美元融資輪的條款清單，估值達 <strong>3,500 億美元</strong>。據報導，OpenAI 正瞄準超過 <strong>8,000 億美元</strong>的估值，而 Google 母公司 Alphabet 的股價在過去一年飆升超過 60%，使其市值達到 4 兆美元。</p>
+                    </div>
                     
                     <!-- FB Post Section -->
-                    <details class="mt-4">
-                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    <details class="mt-6">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium py-2 px-3 bg-blue-50 rounded-lg">
                             <span class="arrow mr-2">▶</span>
-                            <span>📱 查看 Facebook 貼文</span>
+                            <span>📱 展開 Facebook 貼文（一鍵複製）</span>
                         </summary>
                         <div class="fb-post-content mt-3 p-4 rounded-lg">
-                            <pre id="fb-post-5" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">💸 Google 丟出震撼彈！
+                            <pre id="fb-post-5" class="whitespace-pre-wrap text-sm text-gray-700 mb-3 font-sans">📉 軟體業的矛盾時刻：最興奮 vs 最恐慌
 
-2026 年 AI 基礎建設預算：
-🔥 $1750-1850 億美元
-🔥 是 2025 年的 2 倍以上！
+Box CEO：「這是我們 20 年歷史中最令人興奮的時刻！」
+但...股價今年已跌 17% 😱
 
-這錢要花在哪？
-• Google DeepMind AI 運算能力
-• 雲端客戶需求
+雲端運算基金 2026 年已暴跌 20%
+• HubSpot -39%
+• Figma -40%
+• Atlassian -35%
+• Shopify -29%
 
-各家科技巨頭 2026 年燒錢比一比：
-📊 Google：$1850 億
-📊 Amazon：$1466 億
-📊 Meta：$1150-1350 億
+原因？投資者擔心 AI 代理人會取代傳統軟體！
 
-Google Cloud 積壓訂單已達 $2400 億，年增超過 100%！
+而 AI 公司估值持續飆升：
+💰 Anthropic：$3,500 億
+💰 OpenAI：瞄準 $8,000 億+
+💰 Alphabet：市值達 $4 兆
 
-AI 軍備競賽，誰也不想落後 🚀
+軟體業正在經歷巨大的「認知失調」⚡
 
-🔗 https://www.cnbc.com/2026/02/04/alphabet-resets-the-bar-for-ai-infrastructure-spending.html
-
-#Google #AI #雲端 #DeepMind #科技投資</pre>
+🔗 原文：CNBC
+#AI #軟體 #投資 #股市 #Anthropic #OpenAI</pre>
                             <button onclick="copyToClipboard('fb-post-5', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
                                 📋 一鍵複製
                             </button>
