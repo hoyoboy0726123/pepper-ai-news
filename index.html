@@ -8,6 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; }
+        .fb-post-content {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #1877f2;
+        }
+        .copy-btn {
+            transition: all 0.3s ease;
+        }
+        .copy-btn:hover {
+            transform: scale(1.05);
+        }
+        .copy-btn.copied {
+            background-color: #22c55e !important;
+        }
+        details summary {
+            cursor: pointer;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .arrow {
+            transform: rotate(90deg);
+        }
+        .arrow {
+            transition: transform 0.2s ease;
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen py-10">
@@ -19,6 +45,7 @@
         </header>
 
         <div class="space-y-8">
+
             <!-- News Item 1 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-purple-500">
@@ -31,8 +58,35 @@
                         Anthropic 於 2026 年 2 月 5 日正式發布其最新旗艦模型 <strong>Claude Opus 4.6</strong>，這是繼去年 11 月 Opus 4.5 之後的重大升級。新模型專為處理複雜的金融研究任務而設計，能夠深入分析公司數據、監管文件與市場資訊，產出原本需要人類花費數天才能完成的詳細財務分析報告。
                     </p>
                     <p class="text-gray-700 leading-relaxed">
-                        除了金融領域，Opus 4.6 在多項工作相關功能上也有顯著提升，包括製作試算表與簡報、以及軟體開發能力。Anthropic 表示，新模型能「更謹慎地規劃、更持久地執行代理任務、在大型程式碼庫中可靠運作，並能自行發現錯誤」。這項發布正值 AI 產業競爭白熱化之際，Anthropic 近期簽署了一筆 100 億美元的融資協議，估值達 3500 億美元。
+                        除了金融領域，Opus 4.6 在多項工作相關功能上也有顯著提升，包括製作試算表與簡報、以及軟體開發能力。Anthropic 表示，新模型能「更謹慎地規劃、更持久地執行代理任務、在大型程式碼庫中可靠運作，並能自行發現錯誤」。
                     </p>
+                    
+                    <!-- FB Post Section -->
+                    <details class="mt-4">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span class="arrow mr-2">▶</span>
+                            <span>📱 查看 Facebook 貼文</span>
+                        </summary>
+                        <div class="fb-post-content mt-3 p-4 rounded-lg">
+                            <pre id="fb-post-1" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">🚀 【重磅】Anthropic 發布 Claude Opus 4.6！
+
+這次升級超有感！新模型專為「金融研究」打造，能分析公司財報、監管文件、市場數據，產出人類需要好幾天才能完成的分析報告 📊
+
+更厲害的是：
+✅ 更強的規劃能力
+✅ 更持久的代理任務執行
+✅ 自動發現並修正錯誤
+
+AI 正在改變金融業的遊戲規則！
+
+🔗 https://www.bloomberg.com/news/articles/2026-02-05/anthropic-updates-ai-model-to-field-more-complex-financial-research
+
+#AI #Claude #Anthropic #金融科技 #人工智慧</pre>
+                            <button onclick="copyToClipboard('fb-post-1', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
+                                📋 一鍵複製
+                            </button>
+                        </div>
+                    </details>
                 </div>
             </article>
 
@@ -45,22 +99,43 @@
                         <span>Source: <a href="https://github.blog/changelog/2026-02-05-claude-opus-4-6-is-now-generally-available-for-github-copilot/" class="text-blue-500 hover:underline" target="_blank">GitHub Changelog</a></span>
                     </div>
                     <p class="text-gray-700 leading-relaxed mb-4">
-                        GitHub 官方宣布，Anthropic 最新發布的 <strong>Claude Opus 4.6</strong> 模型現已在 GitHub Copilot 中正式上線。根據早期測試，Claude Opus 4.6 在 <strong>代理式程式開發（agentic coding）</strong>方面表現出色，特別擅長處理需要規劃與工具調用的高難度任務。
+                        GitHub 官方宣布，Anthropic 最新發布的 <strong>Claude Opus 4.6</strong> 模型現已在 GitHub Copilot 中正式上線。根據早期測試，Claude Opus 4.6 在代理式程式開發（agentic coding）方面表現出色，特別擅長處理需要規劃與工具調用的高難度任務。
                     </p>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        <strong>支援範圍：</strong>Copilot Pro、Pro+、Business 與 Enterprise 用戶皆可使用。開發者可在以下環境中透過模型選擇器切換至 Claude Opus 4.6：
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 mb-4">
-                        <li>Visual Studio Code（所有模式：chat、ask、edit、agent）</li>
-                        <li>Visual Studio（agent、ask 模式）</li>
-                        <li>github.com 網頁版</li>
-                        <li>GitHub Mobile（iOS / Android）</li>
-                        <li>GitHub CLI</li>
-                        <li>GitHub Copilot coding agent（僅限 Pro / Pro+ 帳戶）</li>
-                    </ul>
                     <p class="text-gray-700 leading-relaxed">
-                        <strong>注意：</strong>Copilot Enterprise 與 Business 方案的管理員需先在 Copilot 設定中啟用 Claude Opus 4.6 政策。目前正在逐步推出中，若尚未看到請稍候。
+                        支援範圍：Copilot Pro、Pro+、Business 與 Enterprise 用戶皆可使用。開發者可在 VS Code、Visual Studio、github.com、GitHub Mobile、GitHub CLI 中使用。
                     </p>
+                    
+                    <!-- FB Post Section -->
+                    <details class="mt-4">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span class="arrow mr-2">▶</span>
+                            <span>📱 查看 Facebook 貼文</span>
+                        </summary>
+                        <div class="fb-post-content mt-3 p-4 rounded-lg">
+                            <pre id="fb-post-2" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">💻 開發者福音！GitHub Copilot 現在支援 Claude Opus 4.6 了！
+
+這個組合有多強？
+🔥 專攻「代理式程式開發」
+🔥 擅長需要規劃的複雜任務
+🔥 自動工具調用超順手
+
+支援環境：
+• VS Code（全模式）
+• Visual Studio
+• github.com
+• GitHub Mobile
+• GitHub CLI
+
+Pro/Pro+/Business/Enterprise 用戶現在就能用！
+
+🔗 https://github.blog/changelog/2026-02-05-claude-opus-4-6-is-now-generally-available-for-github-copilot/
+
+#GitHub #Copilot #Claude #開發者 #程式設計</pre>
+                            <button onclick="copyToClipboard('fb-post-2', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
+                                📋 一鍵複製
+                            </button>
+                        </div>
+                    </details>
                 </div>
             </article>
 
@@ -75,12 +150,35 @@
                     <p class="text-gray-700 leading-relaxed mb-4">
                         ChatGPT 與 Claude 兩大 AI 聊天機器人背後的公司——OpenAI 與 Anthropic——今年將迎來「生死對決」，雙方都需要證明自己的商業模式能夠實現盈利。這場激烈競爭現已延燒至<strong>超級盃廣告</strong>戰場。
                     </p>
-                    <p class="text-gray-700 leading-relaxed mb-4">
-                        Anthropic 將在本週日的超級盃期間播出兩支電視廣告，幽默諷刺 OpenAI 開始在免費版與低價版 ChatGPT 中投放數位廣告的做法。廣告以誇張的方式呈現「操控性聊天機器人」如何先與用戶建立關係、再推銷產品的危險，結尾打出標語：<strong>「廣告即將進入 AI，但不會進入 Claude。」</strong>
-                    </p>
                     <p class="text-gray-700 leading-relaxed">
-                        OpenAI 執行長 Sam Altman 在社群媒體上回擊，稱這些廣告「有趣但不誠實」，並嘲諷 Anthropic「只服務有錢人」。他強調：「使用免費 ChatGPT 的德州人，比全美國使用 Claude 的人還多。」OpenAI 共同創辦人 Greg Brockman 也加入戰局，質疑 Anthropic 是否真的承諾永遠不出售用戶數據給廣告商。這場公開互嗆凸顯了兩家公司自 2021 年分道揚鑣以來的持續競爭。
+                        Anthropic 將在本週日的超級盃期間播出兩支電視廣告，幽默諷刺 OpenAI 開始在免費版 ChatGPT 中投放廣告的做法。廣告結尾打出標語：<strong>「廣告即將進入 AI，但不會進入 Claude。」</strong> Sam Altman 在社群媒體上回擊，稱這些廣告「有趣但不誠實」。
                     </p>
+                    
+                    <!-- FB Post Section -->
+                    <details class="mt-4">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span class="arrow mr-2">▶</span>
+                            <span>📱 查看 Facebook 貼文</span>
+                        </summary>
+                        <div class="fb-post-content mt-3 p-4 rounded-lg">
+                            <pre id="fb-post-3" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">🔥 AI 界的超級盃大戰開打！
+
+Anthropic 在超級盃打廣告諷刺 OpenAI：
+「廣告即將進入 AI，但不會進入 Claude。」
+
+Sam Altman 馬上回嗆：「有趣，但不誠實！」
+還補刀：「用免費 ChatGPT 的德州人，比全美用 Claude 的人還多。」
+
+這場 AI 口水戰誰勝誰負？🍿
+
+🔗 https://www.mercurynews.com/2026/02/05/openai-anthropic-rivalry/
+
+#AI #OpenAI #Anthropic #ChatGPT #Claude #SuperBowl</pre>
+                            <button onclick="copyToClipboard('fb-post-3', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
+                                📋 一鍵複製
+                            </button>
+                        </div>
+                    </details>
                 </div>
             </article>
 
@@ -96,15 +194,114 @@
                         AI 領域的三大獨角獸正面臨 IPO 的關鍵時刻。根據最新報導，<strong>Anthropic 本月稍早簽署了一份 100 億美元融資協議，估值達 3500 億美元</strong>；而 <strong>OpenAI 據報正瞄準超過 8000 億美元的估值</strong>。與此同時，Google 母公司 Alphabet 的股價在過去一年飆漲超過 60%。
                     </p>
                     <p class="text-gray-700 leading-relaxed">
-                        Anthropic 的 Claude Code 已成為爆款產品，重創傳統軟體股並迫使 OpenAI 緊急回應——後者隨即推出了 Codex 代理人的更新版本。這場 AI 軍備競賽正在重塑企業軟體市場，讓投資人見識到 AI 改變產業的驚人速度。
+                        Anthropic 的 Claude Code 已成為爆款產品，重創傳統軟體股並迫使 OpenAI 緊急回應——後者隨即推出了 Codex 代理人的更新版本。
                     </p>
+                    
+                    <!-- FB Post Section -->
+                    <details class="mt-4">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span class="arrow mr-2">▶</span>
+                            <span>📱 查看 Facebook 貼文</span>
+                        </summary>
+                        <div class="fb-post-content mt-3 p-4 rounded-lg">
+                            <pre id="fb-post-4" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">📈 AI 三巨頭 IPO 倒數計時！
+
+最新估值出爐：
+💰 Anthropic：$3500 億美元（剛融資 $100 億）
+💰 OpenAI：瞄準 $8000 億美元+
+💰 Google 母公司 Alphabet：過去一年股價飆漲 60%+
+
+Claude Code 爆紅到什麼程度？
+直接衝擊傳統軟體股，逼得 OpenAI 緊急推出 Codex 更新來應戰！
+
+AI 獨角獸們準備上市了，你準備好了嗎？
+
+🔗 https://www.cnbc.com/2026/02/04/software-experiencing-most-exciting-moment-as-ai-fears-hammer-stocks.html
+
+#AI #IPO #Anthropic #OpenAI #投資 #科技股</pre>
+                            <button onclick="copyToClipboard('fb-post-4', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
+                                📋 一鍵複製
+                            </button>
+                        </div>
+                    </details>
                 </div>
             </article>
+
+            <!-- News Item 5 -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6 border-l-4 border-yellow-500">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💸 Google 震撼華爾街：2026 年 AI 基建投資上看 1850 億美元</h2>
+                    <div class="flex items-center text-sm text-gray-500 mb-4">
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded mr-2">Google</span>
+                        <span>Source: <a href="https://www.cnbc.com/2026/02/04/alphabet-resets-the-bar-for-ai-infrastructure-spending.html" class="text-blue-500 hover:underline" target="_blank">CNBC</a></span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Google 母公司 Alphabet 公布 2026 年資本支出預算，預計將達到 <strong>1750 億至 1850 億美元</strong>，這個數字幾乎是 2025 年支出的兩倍以上，遠超華爾街預期。這筆龐大的支出將主要用於投資 Google DeepMind 的 AI 運算能力，以及滿足「龐大的雲端客戶需求」。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        相較之下，Meta 預計 2026 年支出 1150-1350 億美元，Amazon 預估 1466 億美元。Google Cloud 的積壓訂單已飆升至 2400 億美元，年增超過一倍，顯示企業對 AI 服務的需求持續強勁。儘管華爾街對高額 AI 支出感到緊張，科技巨頭們仍在全速擴建基礎設施。
+                    </p>
+                    
+                    <!-- FB Post Section -->
+                    <details class="mt-4">
+                        <summary class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span class="arrow mr-2">▶</span>
+                            <span>📱 查看 Facebook 貼文</span>
+                        </summary>
+                        <div class="fb-post-content mt-3 p-4 rounded-lg">
+                            <pre id="fb-post-5" class="whitespace-pre-wrap text-sm text-gray-700 mb-3">💸 Google 丟出震撼彈！
+
+2026 年 AI 基礎建設預算：
+🔥 $1750-1850 億美元
+🔥 是 2025 年的 2 倍以上！
+
+這錢要花在哪？
+• Google DeepMind AI 運算能力
+• 雲端客戶需求
+
+各家科技巨頭 2026 年燒錢比一比：
+📊 Google：$1850 億
+📊 Amazon：$1466 億
+📊 Meta：$1150-1350 億
+
+Google Cloud 積壓訂單已達 $2400 億，年增超過 100%！
+
+AI 軍備競賽，誰也不想落後 🚀
+
+🔗 https://www.cnbc.com/2026/02/04/alphabet-resets-the-bar-for-ai-infrastructure-spending.html
+
+#Google #AI #雲端 #DeepMind #科技投資</pre>
+                            <button onclick="copyToClipboard('fb-post-5', this)" class="copy-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600">
+                                📋 一鍵複製
+                            </button>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
         </div>
 
         <footer class="text-center mt-12 text-gray-500 text-sm">
             <p>&copy; 2026 Pepper AI News. Powered by OpenClaw 🌶️</p>
         </footer>
     </div>
+
+    <script>
+        function copyToClipboard(elementId, button) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.innerHTML;
+                button.innerHTML = '✅ 已複製！';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('複製失敗:', err);
+                alert('複製失敗，請手動選取複製');
+            });
+        }
+    </script>
 </body>
 </html>
