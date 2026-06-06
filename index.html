@@ -45,7 +45,7 @@
         <header class="text-center mb-12">
             <h1 class="text-4xl font-bold text-indigo-600 mb-2">🌶️ Pepper AI News</h1>
             <p class="text-gray-600">每日 AI 重點新聞速遞｜完整翻譯 + FB 貼文</p>
-            <p class="text-sm text-gray-400 mt-2">更新日期：2026-06-05</p>
+            <p class="text-sm text-gray-400 mt-2">更新日期：2026-06-06</p>
         </header>
 
         <div class="space-y-8">
@@ -53,21 +53,21 @@
             <!-- News Item 1 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-blue-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💸 Agentic AI 成本失控：企業從「先上線」轉向「先算 ROI」</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🤖 Anthropic：80% 新增正式碼已由 Claude 撰寫，AI Coding 進入自動化工廠階段</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2">AI Economics</span>
-                        <span>Source: <a href="https://finance.yahoo.com/sectors/technology/articles/ai-binge-companies-balk-soaring-014735313.html" class="text-blue-500 hover:underline" target="_blank">AFP / Yahoo Finance</a></span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2">AI Coding</span>
+                        <span>Source: <a href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" class="text-blue-500 hover:underline" target="_blank">VentureBeat</a></span>
                     </div>
                     
-                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>最新 AI 成本報導指出，企業導入生成式 AI 的甜蜜期正在結束。當使用場景從單輪問答，升級成會規劃、拆任務、呼叫多個工具、持續重試的 <strong>agentic AI</strong> 後，token 消耗可能比一般 chatbot 高出 <strong>1000 倍</strong>。原本鼓勵員工「多用 AI、多試 AI」的公司，現在開始改口，要求每個 AI 流程都要能對應明確的成本與產出。</p>
-<p>真正昂貴的不是單一模型，而是整條代理鏈：規劃、搜尋、推理、工具呼叫、驗證、重跑，每一步都在累積 token、GPU 與延遲成本。當企業缺乏觀測機制時，很容易出現「AI 用量很高，但生產力沒有同步提升」的反效果，甚至讓單一員工的 AI 月費逼近甚至超過其人力成本。</p>
-<p>這代表企業 AI 競爭正在進入下一階段：不是誰喊得最兇、接得最快，而是誰能把 AI 任務切分得更精細、選對模型、壓低單位任務成本。從今年開始，AI FinOps 不再是加分題，而是大規模導入前的基本盤。</p>
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>Anthropic 最新揭露，2026 年 5 月併入正式環境的新增程式碼中，超過 <strong>80%</strong> 已經不是工程師親手撰寫，而是由 Claude 產生後再經審核與整合。更驚人的是，該公司表示每位工程師每季交付的程式碼量，相較 2021–2025 基準已提升約 <strong>8 倍</strong>。這代表 AI coding assistant 的角色，正從「補 code 的副駕駛」升級成「可以獨立產出大量可合併成果的代理工廠」。</p>
+<p>文章指出，真正的變化不是單純讓模型寫更多函式，而是整個軟體生產流程被重新設計：人類提出目標、模型負責實作、測試與修正，人類再轉向架構審核、品質判斷與風險控管。Anthropic 也坦白，當 AI 大量產碼後，新的瓶頸反而變成 code review、驗證與治理；如果缺乏自動審查機制，輸出速度再快也可能把錯誤同步放大。</p>
+<p>這對企業的訊號很直接：AI 寫程式已經不再只是開發者個人效率工具，而是會改寫整個研發組織的節奏、分工與 KPI。未來競爭力的差異，不只在於誰有更好的模型，而在於誰能把 AI 產碼、測試、審查、部署串成可持續運作的流水線。</p>
 <h3 class="text-xl font-bold mt-6">🏢 企業導入重點</h3>
 <ul class="list-disc list-inside space-y-2">
-<li><strong>建立任務級成本儀表板：</strong>至少看到每個流程、部門、產品線的 token 與工具成本</li>
-<li><strong>高低模型分流：</strong>摘要、分類、抽取交給小模型，複雜推理再上大模型</li>
-<li><strong>替 agent 設定護欄：</strong>限制重試次數、最大步數與可呼叫工具數量</li>
-<li><strong>把 ROI 寫進 PoC：</strong>導入前先定義節省工時、錯誤率下降或營收提升指標</li>
+<li><strong>把工程師角色升級為架構師與審核者：</strong>重點從手寫程式轉向定義規格、驗證結果與管控風險</li>
+<li><strong>補上 AI code review 與 CI/CD 守門機制：</strong>避免 AI 高速產碼把漏洞與錯誤一起放大</li>
+<li><strong>優先清理技術債與高重複維護工作：</strong>這類封閉式任務最容易被 agent 帶來倍數效率</li>
+<li><strong>同步處理團隊心理與協作變化：</strong>AI 提升速度的同時，也可能削弱知識交流與工程師掌控感</li>
 </ul></div>
 
                     <details class="mt-6">
@@ -76,20 +76,20 @@
                             <span>📱 展開 Facebook 貼文</span>
                         </summary>
                         <div class="fb-post-content p-4 rounded-lg mt-4 relative">
-                            <div id="fb-post-1" class="text-gray-800 leading-relaxed">💸 Agentic AI 很強，但也很燒錢
+                            <div id="fb-post-1" class="text-gray-800 leading-relaxed">🤖 Anthropic 內部有 80% 新增正式碼已交給 Claude 產出
 
-✅ AI agent 任務可能比一般 chatbot 多耗 1000 倍 token
-✅ 企業正從「先導入再說」改成「先算 ROI」
-✅ 真正昂貴的是整條代理工作流，不只是模型單價
-✅ AI FinOps 會變成企業導入標配
+✅ AI coding 正從助手模式走向自動化工廠
+✅ 每位工程師交付量據稱提升約 8 倍
+✅ 新瓶頸不再是寫 code，而是審核、驗證與治理
+✅ 軟體團隊的分工與 KPI 會被重新定義
 
 💼 企業導入重點：
-• 建立任務級成本儀表板
-• 小模型處理簡單任務，大模型處理高價值決策
-• 限制 agent 重試與步數
-• 將 ROI 指標寫進 PoC
+• 工程師角色升級為架構師與審核者
+• 導入 AI code review 與 CI/CD 守門
+• 先拿技術債與高重複維護任務開刀
+• 管理團隊協作與心理衝擊
 
-#AgenticAI #AIFinOps #EnterpriseAI #LLM</div>
+#Anthropic #Claude #AICoding #EnterpriseAI</div>
                             <button onclick="copyToClipboard('fb-post-1', this)" class="copy-btn mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -104,21 +104,21 @@
             <!-- News Item 2 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-green-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">⚖️ CNN 提告 Perplexity：AI 搜尋正式進入「授權與引用」硬碰硬時代</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">💻 Google 推 Gemma 4 12B：16GB 筆電也能跑本地多模態 AI，邊緣部署門檻再降</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-2">AI Copyright</span>
-                        <span>Source: <a href="https://www.reuters.com/legal/litigation/cnn-files-suit-against-perplexity-alleging-unlawful-content-distribution-2026-05-28/" class="text-blue-500 hover:underline" target="_blank">Reuters</a></span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-2">Edge AI</span>
+                        <span>Source: <a href="https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop" class="text-blue-500 hover:underline" target="_blank">VentureBeat</a></span>
                     </div>
                     
-                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>CNN 已正式對 Perplexity 提起聯邦訴訟，指控其未經授權抓取並散布超過 <strong>17,000 篇</strong> 新聞內容，包含文字、圖片與付費牆資訊。這不只是單一媒體與 AI 新創的法律衝突，而是整個 AI 搜尋產業在 2026 年面對的核心拐點：內容來源、授權模式與錯誤引用責任，已從灰色地帶走進法庭。</p>
-<p>案件的風險不只在訓練資料。CNN 也主張，Perplexity 可能把不精確甚至捏造的內容歸因給 CNN，讓 hallucination 從品質問題上升到品牌侵權與法律責任。若法院傾向支持內容方，未來 AI 搜尋、摘要與知識助手服務，很可能必須為授權內容支付更高成本，並把成本反映到企業訂閱或 API 價格上。</p>
-<p>對企業而言，這是一個很實際的提醒：只要 AI 輸出會面向外部客戶、媒體、市場或決策文件，來源治理就不能再用「先做出來再補流程」的方式處理。未來真正能上線的，不只是答案快的模型，而是引用、授權、稽核都站得住腳的系統。</p>
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>Google 發表開源權重模型 <strong>Gemma 4 12B</strong>，主打可在一般具備 <strong>16GB 記憶體</strong> 的企業筆電本地執行，還支援音訊、影像等多模態輸入。相較許多越做越大的模型路線，Gemma 4 12B 押注的是「在地化、低成本、低延遲」的企業需求，特別適合離線場景、資料敏感環境，以及不想把每一次推論都送上雲端的組織。</p>
+<p>文章提到，Gemma 4 12B 採用 encoder-free 的統一架構，減少額外模組帶來的延遲與記憶體開銷，同時提供 256K context、原生 function calling 與 agentic tool use。這讓它不只是小模型，而是能真正承接企業級長文本、多模態與代理任務的實用底座。對很多公司來說，這類模型的價值不在 benchmark 是否最頂，而在於能否真正落地在現場設備、分公司電腦、零售據點或受限網路環境。</p>
+<p>這反映一個很明確的趨勢：AI 基礎設施正在從「全部上雲」走向「雲邊混合」。當企業更重視資料主權、法規遵循與長期推論成本，本地可跑的開源模型會成為越來越關鍵的選項。</p>
 <h3 class="text-xl font-bold mt-6">🏢 企業導入重點</h3>
 <ul class="list-disc list-inside space-y-2">
-<li><strong>建立可追溯引用鏈：</strong>每則 AI 生成內容都要能回溯原始來源與時間戳</li>
-<li><strong>區分內部研究與外部發布：</strong>內用可快，外發內容必須走法務與品牌審核</li>
-<li><strong>優先選擇有授權策略的平台：</strong>供應商是否有內容合作，會直接影響可持續性</li>
-<li><strong>把 hallucination 納入合規治理：</strong>錯誤歸因不只是品質瑕疵，而是潛在訴訟風險</li>
+<li><strong>優先評估資料敏感與離線場景：</strong>醫療、金融、製造現場與外勤應用最適合本地模型</li>
+<li><strong>把小型多模態模型納入雲邊混合架構：</strong>不是取代雲端，而是分流適合本地執行的工作</li>
+<li><strong>善用開源生態降低導入成本：</strong>Hugging Face、llama.cpp、vLLM 等工具可加速 PoC 與部署</li>
+<li><strong>留意影音輸入上限：</strong>長影音仍需切片、RAG 或搭配雲端模型處理</li>
 </ul></div>
 
                     <details class="mt-6">
@@ -127,20 +127,20 @@
                             <span>📱 展開 Facebook 貼文</span>
                         </summary>
                         <div class="fb-post-content p-4 rounded-lg mt-4 relative">
-                            <div id="fb-post-2" class="text-gray-800 leading-relaxed">⚖️ CNN 告 Perplexity，AI 搜尋的版權戰升級了
+                            <div id="fb-post-2" class="text-gray-800 leading-relaxed">💻 Google 把多模態 AI 壓進 16GB 筆電了
 
-✅ 指控未授權使用超過 17,000 篇新聞內容
-✅ 爭議不只抓取，還包含付費牆與錯誤歸因
-✅ AI 內容授權成本可能進一步推高
-✅ 企業用 AI 對外輸出時，來源治理不能再模糊帶過
+✅ Gemma 4 12B 可本地跑音訊與影像理解
+✅ 適合離線、低延遲、資料敏感環境
+✅ 本地推論有機會大幅降低雲端成本
+✅ 雲邊混合架構會越來越主流
 
 💼 企業導入重點：
-• 建立可追溯引用鏈
-• 內部研究與外部發布分流
-• 優先選有授權策略的供應商
-• 把 hallucination 納入合規治理
+• 先鎖定資料敏感與離線場景
+• 把小模型納入雲邊混合部署
+• 善用開源生態加速 PoC
+• 長影音任務仍需搭配切片或雲端方案
 
-#Perplexity #Copyright #AI搜尋 #EnterpriseAI</div>
+#Google #Gemma #EdgeAI #EnterpriseAI</div>
                             <button onclick="copyToClipboard('fb-post-2', this)" class="copy-btn mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -155,21 +155,21 @@
             <!-- News Item 3 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-red-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">👥 Groupon 裁撤近四分之一人力：AI-Native 不再只是口號，而是組織重畫</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🧠 Microsoft 發表 Surface RTX Spark Dev Box：大型模型開始從雲端回到開發者桌上</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded mr-2">Workforce Transformation</span>
-                        <span>Source: <a href="https://www.fastcompany.com/91548945/groupon-layoffs-today-jobs-slashed-ai-native-pivot-stock-rises" class="text-blue-500 hover:underline" target="_blank">Fast Company</a></span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded mr-2">AI Infrastructure</span>
+                        <span>Source: <a href="https://venturebeat.com/infrastructure/microsoft-debuts-surface-rtx-spark-dev-box-to-run-large-ai-models-without-cloud-costs" class="text-blue-500 hover:underline" target="_blank">VentureBeat</a></span>
                     </div>
                     
-                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>Groupon 宣布在 Project Foundry 計畫下，最多裁撤 <strong>400 個職位</strong>，接近整體人力四分之一，並明確將此次重整定義為朝向「AI-native 公司」轉型。這代表企業導入 AI 已不只是購買工具或加上 copilots，而是開始直接改寫組織設計、流程責任與職能分工。</p>
-<p>Groupon 看上的，是其大量重複性流程：商品上架、商家 onboarding、客服回覆、行銷內容生成與營運支援，都屬於可被 AI 大量滲透的場景。資本市場也往往把這類重整視為效率故事，表示投資人期待企業不只靠 AI 提升速度，更要靠 AI 降低固定人力成本。</p>
-<p>但 AI-native 轉型的真正難點，從來不是裁員，而是流程韌性。若企業只拿 AI 當縮編工具，卻沒有保留例外處理、品質監控、知識保留與再訓練機制，很容易讓整體服務品質與客訴風險惡化。成熟的人機協作，不是「人變少」而已，而是把人放在更高價值的監督與例外決策位置。</p>
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>Microsoft 在 Build 2026 揭曉 <strong>Surface RTX Spark Dev Box</strong>，以 128GB unified memory 與 Nvidia Blackwell 架構為核心，主打讓開發者能在本地桌機直接運行超過 100B 參數等級的大模型，而不必每次都支付雲端 API 或 GPU 租用費。這個產品的戰略意義不只是硬體新品，而是宣告企業 AI 成本結構正在改變：越來越多日常開發、測試與原型工作，將先在本地完成，再把真正需要規模化的部分送上雲。</p>
+<p>文章指出，Microsoft 甚至直接把 WSL2、CUDA、VS Code、GitHub Copilot、Python、Node.js 等開發環境預載好，降低 AI 開發的啟動摩擦。這顯示大型科技公司已經把「本地 AI 開發體驗」視為競爭戰場，而不是單純推升雲用量。對企業來說，如果 agent workflow 需要頻繁反覆測試、模型轉換、微調或內網資料驗證，本地高效能設備可以把成本從變動費率，轉成較可控的固定投資。</p>
+<p>這背後代表的趨勢是：AI infrastructure 不再只有資料中心層級的競爭，桌邊算力也正在成為產品力與成本力的一部分。未來企業規劃 AI 平台時，可能得同時思考資料中心、團隊桌機與邊緣設備三層架構。</p>
 <h3 class="text-xl font-bold mt-6">🏢 企業導入重點</h3>
 <ul class="list-disc list-inside space-y-2">
-<li><strong>先重畫流程，再調整 headcount：</strong>從作業鏈分析出發，不要把裁員當 AI 策略本身</li>
-<li><strong>保留人工兜底節點：</strong>客服爭議、商家異常、風險審核仍需人類接手</li>
-<li><strong>設計再訓練路徑：</strong>把角色轉為 AI operator、稽核者與流程設計者</li>
-<li><strong>用 KPI 驗證 AI-native 成效：</strong>同時追蹤速度、品質、客訴率與留存率</li>
+<li><strong>把本地算力納入 AI 成本模型：</strong>高頻測試與原型任務可先離開雲端計費模式</li>
+<li><strong>建立桌邊開發到雲端部署的標準流程：</strong>避免本地 PoC 成功後無法順利上線</li>
+<li><strong>評估內網資料與安全需求：</strong>敏感資料驗證、模型微調與 agent 測試尤其適合本地執行</li>
+<li><strong>別只比硬體效能，也要比工具整合：</strong>OS、驅動、開發環境與治理能力同樣關鍵</li>
 </ul></div>
 
                     <details class="mt-6">
@@ -178,20 +178,20 @@
                             <span>📱 展開 Facebook 貼文</span>
                         </summary>
                         <div class="fb-post-content p-4 rounded-lg mt-4 relative">
-                            <div id="fb-post-3" class="text-gray-800 leading-relaxed">👥 AI-native 轉型，開始真的動到組織了
+                            <div id="fb-post-3" class="text-gray-800 leading-relaxed">🧠 Microsoft 想把大型模型搬回開發者桌上
 
-✅ Groupon 最多裁 400 人，接近四分之一人力
-✅ 目標是把核心營運流程改造成 AI-native
-✅ 企業 AI 轉型正從工具層走向組織層
-✅ 真正難的是重設人機分工，不只是縮編
+✅ 新 Dev Box 主打本地運行超大模型
+✅ 128GB unified memory 降低雲端依賴
+✅ 本地高頻測試可把變動成本變固定成本
+✅ AI 基礎設施戰場正在往桌邊延伸
 
 💼 企業導入重點：
-• 先做流程設計再談 headcount
-• 保留人工處理例外與爭議
-• 建立員工再訓練路徑
-• 用 KPI 驗證品質與效率是否同步提升
+• 把本地算力納入 AI 成本模型
+• 建立本地到雲端的標準部署流程
+• 敏感資料驗證優先留在內網
+• 評估工具整合，不只看硬體規格
 
-#AINative #WorkforceTransformation #Groupon #EnterpriseAI</div>
+#Microsoft #AIInfrastructure #LocalAI #DevBox</div>
                             <button onclick="copyToClipboard('fb-post-3', this)" class="copy-btn mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -206,21 +206,21 @@
             <!-- News Item 4 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-purple-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🖥️ OpenAI Codex 登上 Windows：AI 代理開始真正接手桌面操作</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🛠️ OpenAI 更新 Codex：用 Sites 與角色外掛，把 AI 代理推進白領工作流核心</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
                         <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded mr-2">AI Agents</span>
-                        <span>Source: <a href="https://www.theverge.com/ai-artificial-intelligence/940095/openais-codex-can-now-control-your-windows-computer-too" class="text-blue-500 hover:underline" target="_blank">The Verge</a></span>
+                        <span>Source: <a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins" class="text-blue-500 hover:underline" target="_blank">VentureBeat</a></span>
                     </div>
                     
-                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>OpenAI 已將 Codex 的 Computer Use 能力帶到 Windows 11，讓 AI 不只會生成程式碼，還能直接看畫面、點擊視窗、輸入資料、執行 QA 測試與 bug hunting。這讓 AI coding assistant 開始從「寫程式建議器」，進化成能實際操作桌面工作流的代理人。</p>
-<p>這個更新特別關鍵，因為許多企業內部系統、 legacy 工具與 Windows 桌面應用並沒有現成 API，也缺乏完整自動化測試能力。當 AI 可以透過 GUI 進行操作與驗證，原本很難自動化的流程——像是表單填報、桌面版 ERP、視覺化 QA——就有機會被納入 agent 化範圍。</p>
-<p>不過，桌面代理也放大了權限與風險問題。只要 AI 能看畫面、點按鈕、送資料，就代表任何設定錯誤都可能造成誤操作、資料外洩或流程事故。因此企業真正要思考的不是「這能不能用」，而是「什麼場景下能安全地讓它用」。</p>
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>OpenAI 宣布擴充 Codex 平台，新增 <strong>Sites</strong>、<strong>Annotations</strong> 與多種角色導向外掛，讓 AI 不再只是開發者工具，而是逐步變成金融分析、行銷、研究、設計與營運人員的日常工作介面。報導指出，非工程背景使用者已佔 Codex 每週 500 萬用戶中的約 20%，且成長速度是傳統工程師的 3 倍，顯示 agentic AI 正快速從 terminal 走向白領知識工作。</p>
+<p>這次更新的重點很務實。Annotations 可讓 AI 只修改文件或試算表中的特定區塊，避免整份重寫造成格式毀損；角色外掛則把 Salesforce、Snowflake、Figma、PitchBook 等商務系統直接整合進工作流程；Sites 更進一步把靜態資料變成可分享的互動式內部網頁。換句話說，企業不再只是在「問 AI 問題」，而是在讓 AI 直接生成、更新與分發工作成果。</p>
+<p>對企業來說，這是一個重要分水嶺：未來真正有價值的 agent，不只是會回答，而是能嵌進部門既有工具鏈、保留原格式、並支援可控的內部分享與協作。誰先把 AI 納入真實工作流，誰就更可能拿到可量化的生產力紅利。</p>
 <h3 class="text-xl font-bold mt-6">🏢 企業導入重點</h3>
 <ul class="list-disc list-inside space-y-2">
-<li><strong>先從 QA / 測試環境開始：</strong>不要第一波就放進正式交易或高風險流程</li>
-<li><strong>採取 app 級權限控管：</strong>限定 AI 只能操作特定視窗、特定帳號與特定任務</li>
-<li><strong>保留完整稽核紀錄：</strong>畫面錄影、事件 log 與結果比對都要能追溯</li>
-<li><strong>優先鎖定高重複 GUI 工作：</strong>回歸測試、報表輸入、舊系統操作最有導入價值</li>
+<li><strong>優先挑選文件密集、跨工具協作的部門：</strong>財務、營運、行銷與研究最容易產生明顯效益</li>
+<li><strong>要求 AI 支援局部更新而非整份重寫：</strong>這能顯著降低格式損壞與人工重工</li>
+<li><strong>把 SaaS 權限治理納入外掛策略：</strong>整合越深，身分、權限與資料邊界越重要</li>
+<li><strong>衡量的不是聊天次數，而是成果產出速度：</strong>例如報表、提案、分析頁面完成時間</li>
 </ul></div>
 
                     <details class="mt-6">
@@ -229,20 +229,20 @@
                             <span>📱 展開 Facebook 貼文</span>
                         </summary>
                         <div class="fb-post-content p-4 rounded-lg mt-4 relative">
-                            <div id="fb-post-4" class="text-gray-800 leading-relaxed">🖥️ Codex 會操作 Windows 了，AI agent 正式跨進桌面流程
+                            <div id="fb-post-4" class="text-gray-800 leading-relaxed">🛠️ Codex 正從工程工具變成白領工作平台
 
-✅ 能看畫面、點擊、輸入桌面 App
-✅ 可用於 QA、測試與 bug hunting
-✅ GUI 自動化門檻被大幅降低
-✅ 但權限控管與操作稽核會更重要
+✅ OpenAI 新增 Sites、Annotations 與角色外掛
+✅ 非工程用戶正在快速成長
+✅ AI 開始直接產出可分享的內部工作成果
+✅ 真正的價值在嵌入既有 SaaS 與協作流程
 
 💼 企業導入重點：
-• 先用在 QA 與測試環境
-• 限定 app 級操作權限
-• 保留完整操作紀錄
-• 優先自動化高重複 GUI 流程
+• 先從財務、營運、行銷、研究部門切入
+• 選擇支援局部更新的 AI 工作流
+• 把權限治理納入外掛整合策略
+• 用成果交付速度衡量成效
 
-#OpenAI #Codex #ComputerUse #AIAgents</div>
+#OpenAI #Codex #AIAgents #ProductivityAI</div>
                             <button onclick="copyToClipboard('fb-post-4', this)" class="copy-btn mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -257,21 +257,21 @@
             <!-- News Item 5 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 border-l-4 border-orange-500">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">🏗️ SoftBank 砸 750 億歐元布局法國：AI 算力戰正式綁定能源與地緣</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">📑 Zip 推採購 AI Superagents：企業開始把敏感資料從個人 AI 帳號拉回治理框架</h2>
                     <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded mr-2">AI Infrastructure</span>
-                        <span>Source: <a href="https://fortune.com/2026/05/30/softbank-75-billion-investment-french-ai-data-centers-masayoshi-son-emmanuel-macron/" class="text-blue-500 hover:underline" target="_blank">Fortune</a></span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded mr-2">AI Governance</span>
+                        <span>Source: <a href="https://venturebeat.com/technology/zips-new-ai-agents-want-to-stop-your-finance-team-from-uploading-contracts-into-personal-chatgpt-accounts" class="text-blue-500 hover:underline" target="_blank">VentureBeat</a></span>
                     </div>
                     
-                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>SoftBank 宣布將在法國投資最高 <strong>750 億歐元</strong>，打造約 <strong>5GW</strong> 的 AI 資料中心容量，成為歐洲歷來最大規模的 AI 基礎設施承諾之一。這筆投資的重點不只是金額驚人，而是再次說明：AI 競爭已經不只是模型之戰，而是電力、土地、供應鏈與區域部署能力的綜合戰。</p>
-<p>法國之所以能搶下這筆大案，核心優勢在於能源。穩定的核能與電網能力，讓其在歐洲 AI 基建競賽中取得結構性優勢。這也意味著未來資料中心選址，不會只看雲端供應商或土地價格，而會越來越受能源政策、供電穩定性與地緣安全影響。</p>
-<p>對企業端來說，這是很重要的訊號：雲端算力雖然抽象，但背後越來越「物理化」。資料主權、延遲、電力韌性與 ESG 要求，都會直接影響企業 AI 服務的成本、可用性與擴張速度。AI 架構設計，未來不能只看模型能力，也要看算力落在哪裡。</p>
+                    <div class="full-article text-gray-700 leading-relaxed space-y-4"><p>採購平台 Zip 發表五種 AI <strong>Superagents</strong>，涵蓋合約審閱、發票編碼、供應商協商與採購流程引導，同時推出 procurement-native 的 MCP 實作，目標很明確：阻止員工把敏感合約、財務資料與內部分析丟進個人 ChatGPT 或 Claude 帳號處理。這篇報導點出企業 AI 落地最現實的一個問題——不是員工有沒有在用 AI，而是他們已經在用，只是用在沒有監管、沒有稽核軌跡的地方。</p>
+<p>Zip 強調其代理不是在治理框架外運作，而是在既有權限、審批與審計機制內執行。高風險動作仍保留 human-in-the-loop，所有操作都留下 audit trail。這種設計對採購、法務、財務等高度合規部門尤其重要，因為 AI 的價值不是單純幫你快一點，而是讓「快」仍然能被查核、追責與持續管理。</p>
+<p>這也代表企業 AI 下一階段的競爭，不只是誰的模型更聰明，而是誰能把智慧能力包進治理外殼。沒有身份驗證、權限控管、流程閘道與稽核紀錄的 agent，再強也很難進入真正敏感的企業核心流程。</p>
 <h3 class="text-xl font-bold mt-6">🏢 企業導入重點</h3>
 <ul class="list-disc list-inside space-y-2">
-<li><strong>把區域算力策略納入架構：</strong>不同市場可能需要不同部署位置與資料落地方案</li>
-<li><strong>將能源風險納入雲策略：</strong>AI 服務穩定度將越來越依賴供電與機房條件</li>
-<li><strong>平衡延遲、法規與成本：</strong>歐洲在地算力對跨國企業的吸引力會持續上升</li>
-<li><strong>提前規劃多雲多區域備援：</strong>算力供給未必永遠充足，彈性架構會更重要</li>
+<li><strong>優先把影子 AI 使用收編到受管平台：</strong>先解決員工私用 AI 處理敏感資料的風險</li>
+<li><strong>高風險流程必留 human-in-the-loop：</strong>合約、付款、權限變更都不該完全自動放行</li>
+<li><strong>建立完整 audit trail：</strong>AI 做了什麼、看了什麼、建議了什麼，都要可追溯</li>
+<li><strong>把 MCP 與 SaaS 連接視為治理工程：</strong>整合不是終點，控管才是能否落地的關鍵</li>
 </ul></div>
 
                     <details class="mt-6">
@@ -280,20 +280,20 @@
                             <span>📱 展開 Facebook 貼文</span>
                         </summary>
                         <div class="fb-post-content p-4 rounded-lg mt-4 relative">
-                            <div id="fb-post-5" class="text-gray-800 leading-relaxed">🏗️ AI 算力競爭，現在拼的不只是模型，還有能源與地緣
+                            <div id="fb-post-5" class="text-gray-800 leading-relaxed">📑 企業最怕的不是 AI 不夠聰明，而是員工偷偷拿個人帳號處理敏感資料
 
-✅ SoftBank 將在法國投資最高 750 億歐元
-✅ 目標建置 5GW AI 資料中心容量
-✅ 法國勝出的關鍵是能源與穩定電網
-✅ AI 基礎設施正從雲議題變成國家級競爭
+✅ Zip 推出採購 AI Superagents 與 MCP 整合
+✅ 目標是把合約、發票、採購流程拉回治理框架
+✅ 高風險動作保留人工審核與稽核紀錄
+✅ 企業 AI 競爭正在轉向治理能力
 
 💼 企業導入重點：
-• 及早規劃區域算力布局
-• 將能源風險納入 AI 架構
-• 平衡延遲、法規與成本
-• 建立多雲多區域備援能力
+• 優先收編影子 AI 使用情境
+• 高風險流程保留 human-in-the-loop
+• 建立完整 audit trail
+• 把 MCP 與 SaaS 串接當成治理工程
 
-#SoftBank #AIInfrastructure #DataCenter #CloudStrategy</div>
+#AIGovernance #MCP #EnterpriseAI #Zip</div>
                             <button onclick="copyToClipboard('fb-post-5', this)" class="copy-btn mt-4 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
